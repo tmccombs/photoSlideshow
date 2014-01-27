@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name = 'photoSlideshow'
-    s.version = '0.0.1'
+    s.version = '0.1.0'
     s.executables << 'photoSlideshow'
     s.date = '2014-01-27'
     s.summary = 'make a photo slideshow'
