@@ -54,6 +54,6 @@ Dir.mktmpdir do |tdir|
         `convert #{line} -resize #{dimensions} -background black -gravity center -extent #{dimensions} #{out}`
         i += 1
     end
-    `ffmpeg -r #{rate} -i #{tdir}/image%06d.jpg -c:v libx264 -r 30 #{outputFile}`
+    `ffmpeg -r #{rate} -i #{tdir}/image%06d.jpg -c:v libx264 -r 25 -pix_fmt yuv420p #{outputFile}`
 end
 
